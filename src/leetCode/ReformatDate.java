@@ -39,8 +39,18 @@ public class ReformatDate {
 		String f_month = date.substring(first_space + 1, second_space);
 		String f_year = date.substring(second_space = 1);
 		
-		String ans = f_year +"-"+map.get(f_month) + "-" + f_date;
-		return ans;
+//		String ans = f_year +"-"+map.get(f_month) + "-" + f_date;
+//		return ans;
+		
+		  StringBuilder ans = new StringBuilder("");
+	      ans.append(f_year);
+	      ans.append("-");
+	      ans.append(map.get(f_month));
+	      ans.append("-");
+	      ans.append(f_date);
+
+	      return ans.toString();
+		
 	}
 	
 
